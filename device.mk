@@ -362,6 +362,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Speed profile services and wifi-service to reduce RAM and storage
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # TextClassifier smart selection model files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/textclassifier/actions_suggestions.universal.model:$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier/actions_suggestions.universal.model \
