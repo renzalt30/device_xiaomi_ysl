@@ -15,6 +15,9 @@ $(call inherit-product, device/xiaomi/ysl/device.mk)
 # Inherit some common HorizonDroid stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Dolby
+$(call inherit-product, vendor/dolby/ds/dolby-product.mk)
+
 # Horizon flags
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := false
