@@ -262,8 +262,6 @@ function configure_zram_parameters() {
         fi
         echo "$zRamSizeMB""$diskSizeUnit" > /sys/block/zram0/disksize
 
-        mkswap /dev/block/zram0
-        swapon /dev/block/zram0 -p 32758
     fi
 }
 
